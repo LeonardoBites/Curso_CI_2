@@ -10,8 +10,8 @@ on:
 jobs:
 
   test:
-    runs-on: ${{matrix.go_version}}
-    runs-on: ${{matrix.os}}
+    #runs-on: ${{matrix.go_version}}
+    runs-on: ${{ matrix.os }}
     env:
       HOST: localhost
       PORT: 5432
